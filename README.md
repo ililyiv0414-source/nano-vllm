@@ -75,7 +75,6 @@ Use new folders each repetition. The report's off/on columns refer to **prefix c
 
 Based on upstream commit `bb823b3e06983d71485a8e1f23715ebd87d98ef8`, by Xingkai Yu. The engine, paged cache, prefix reuse, model and CUDA Graph come from upstream. This is not an independently rewritten engine. Extensions and analysis were AI-assisted; the maintainer executed A800 verification. The upstream [MIT license](LICENSE) is retained.
 
-The [public evidence](benchmarks/a800-greedy.json) preserves individual timings, token IDs and work counts while removing private machine paths, UUIDs and environment dumps. Historical source fingerprints and worker hashes are retained.
+The [public evidence](benchmarks/a800-greedy.json) preserves individual timings, token-array hashes/lengths and work counts while removing private machine paths, UUIDs and environment dumps. Historical source fingerprints and worker hashes are retained.
 
 If this lab helps you, a star helps others discover it. Reproductions and minimal failing cases are especially welcome.
-

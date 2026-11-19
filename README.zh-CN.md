@@ -1,5 +1,6 @@
 # nano-vllm · 推理优化实验室
 
+[Interactive evidence explorer](https://ililyiv0414-source.github.io/nano-vllm/) · [CPU checks](https://github.com/ililyiv0414-source/nano-vllm/actions/workflows/cpu.yml)
 [English / 完整复现命令](README.md) · [公开实测数据](benchmarks/a800-greedy.json)
 
 基于上游 nano-vLLM，学习如何定位推理耗时、实现改进并验证输出。不是从零重写的推理引擎。

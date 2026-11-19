@@ -1,5 +1,6 @@
 # nano-vllm · Inference Optimization Lab
 
+[Interactive evidence explorer](https://ililyiv0414-source.github.io/nano-vllm/) · [CPU checks](https://github.com/ililyiv0414-source/nano-vllm/actions/workflows/cpu.yml)
 **Profile inference. Change one thing. Verify every token.**
 
 [中文](README.zh-CN.md) · [Measured data](benchmarks/a800-greedy.json) · [Contribute](CONTRIBUTING.md)

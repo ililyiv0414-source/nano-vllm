@@ -1,0 +1,20 @@
+name: CPU checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -r requirements-cpu.txt
+      - run: python exercises/kv_cache_cpu.py
+      - run: python experiments/summarize_public.py
+      - run: python -m unittest discover -s tests -v
+      # GPU-dependent tests skip here. This workflow is not GPU validation.
